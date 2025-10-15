@@ -1,0 +1,82 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f9fafc;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  color: #6c63ff;
+  margin-bottom: 30px;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+input {
+  padding: 10px;
+  margin: 10px 5px 10px 0;
+  width: calc(50% - 10px);
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ffcc70;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #6c63ff;
+  color: white;
+}
+
+.status-available {
+  color: green;
+  font-weight: bold;
+}
+
+.status-issued {
+  color: red;
+  font-weight: bold;
+}
+
+.action-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.action-issue { background: #ffcc70; }
+.action-return { background: #6c63ff; color: white; }
+.action-delete { background: #ff5e5e; color: white; }
