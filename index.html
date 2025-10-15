@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Humera | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+  <nav>
+  <h2 class="logo"> SK Humera<span>.</span></h2>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <!-- Hamburger Icon -->
+  <div class="menu-icon" id="menu-icon">
+  </div>
+</nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I’m <span>Humera</span></h1>
+      <p>A BCA Student passionate about <strong>Web Development</strong> and <strong>Java Programming</strong>.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I’m a final-year BCA student who enjoys building clean and responsive web designs. 
+       I love learning new technologies and creating projects that improve my skills and creativity.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Java</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="project-cards">
+
+    <!-- 1️⃣ Library Management System -->
+    <div class="card">
+      <h3>Library Management System</h3>
+      <p>Interactive web app to manage books: add, issue, return, and delete books with dynamic status.</p>
+      <iframe src="library.html" width="100%" height="350" style="border:1px solid #ccc; border-radius:10px;"></iframe>
+      <a href="library.html" target="_blank" class="btn">Open Full Project</a>
+    </div>
+
+    <!-- 2️⃣ Smart Calculator -->
+    <div class="card">
+      <h3>Smart Calculator</h3>
+      <p>Arithmetic and temperature conversion calculator with interactive UI and responsive design.</p>
+      <iframe src="calculator.html" width="100%" height="350" style="border:1px solid #ccc; border-radius:10px;"></iframe>
+      <a href="calculator.html" target="_blank" class="btn">Open Full Project</a>
+    </div>
+
+    <!-- 3️⃣ To-Do List Manager -->
+    <div class="card">
+      <h3>To-Do List Manager</h3>
+      <p>Manage tasks efficiently with add, delete, mark complete, and undo completed tasks with dynamic UI.</p>
+      <iframe src="todo.html" width="100%" height="350" style="border:1px solid #ccc; border-radius:10px;"></iframe>
+      <a href="todo.html" target="_blank" class="btn">Open Full Project</a>
+    </div>
+
+    <!-- 4️⃣ BMI Calculator -->
+    <div class="card">
+      <h3>BMI Calculator</h3>
+      <p>Calculate your BMI and check your health category with color-coded results and responsive design.</p>
+      <iframe src="bmi.html" width="100%" height="350" style="border:1px solid #ccc; border-radius:10px;"></iframe>
+      <a href="bmi.html" target="_blank" class="btn">Open Full Project</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>📧 humerasalemkhadar@gmail.com</p>
+    <p>🔗 <a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Humera | All Rights Reserved</p>
+  </footer>
+
+  <script>
+  const menuIcon = document.getElementById('menu-icon');
+  const navLinks = document.getElementById('nav-links');
+
+  menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</body>
+</html>

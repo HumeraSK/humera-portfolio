@@ -1,0 +1,280 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-text, .about, .skills, .projects, .contact {
+  animation: fadeInUp 1s ease forwards;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f9fafc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.logo span {
+  color: #6c63ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  color: #6c63ff;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #6c63ff, #a78bfa);
+  color: white;
+  padding: 100px 5%;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero span {
+  color: #ffcc70;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: white;
+  color: #6c63ff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #ffcc70;
+  color: #333;
+}
+
+/* About Section */
+.about {
+  padding: 80px 5%;
+  text-align: center;
+}
+
+/* Skills */
+.skills {
+  background: #f0f0ff;
+  padding: 80px 5%;
+  text-align: center;
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.skill {
+  background: white;
+  border-radius: 25px;
+  padding: 10px 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+
+/* Projects */
+.projects {
+  padding: 80px 5%;
+  text-align: center;
+}
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.card {
+  background: white;
+  padding: 25px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact */
+.contact {
+  background: #6c63ff;
+  color: white;
+  text-align: center;
+  padding: 60px 5%;
+}
+.contact a {
+  color: #ffcc70;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ========================= */
+/* RESPONSIVE DESIGN SECTION */
+/* ========================= */
+
+/* For tablets (width ≤ 768px) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-container {
+    flex-wrap: wrap;
+  }
+}
+
+/* For mobile phones (width ≤ 480px) */
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .hero {
+    padding: 70px 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+
+  .about, .skills, .projects, .contact {
+    padding: 50px 5%;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .skill {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+/* Hamburger menu styles */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Show menu icon on small screens */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 70px;
+    right: 5%;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+}
+
