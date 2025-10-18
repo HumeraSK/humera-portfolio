@@ -355,10 +355,9 @@ footer {
 .cert-card {
   text-decoration: none;
   color: #333;
-  width: 100%;
-  max-width: 250px;
-  flex: 0 1 auto;     
-  transition: transform 0.3s;
+  width: 250px;
+  flex: 0 0 auto;
+  max-width: 250px;  /* prevent growing on large screens */
 }
 
 .cert-thumb {
@@ -384,6 +383,14 @@ footer {
 
 /* Responsive breakpoints */
 
+  
+/* Large screens: prevent huge cards */
+@media (min-width: 1025px) {
+  .cert-card {
+    max-width: 250px;
+  }
+}
+
 /* Tablets: 768px to 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
   .cert-card {
@@ -397,6 +404,7 @@ footer {
     max-width: 180px; /* small on mobile */
   }
 }
+
 
 
 
