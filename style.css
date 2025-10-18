@@ -357,7 +357,8 @@ footer {
 }
 
 .cert-thumb {
-  width: 100%;        /* fill card width */
+  width: 100%;   
+  max-width: 250px;/* fill card width */
   height: auto;       /* maintain aspect ratio */
   display: block;     /* remove inline spacing */
   border-radius: 10px;
@@ -375,5 +376,6 @@ footer {
   font-size: 0.9rem;
   text-align: center;
 }
+
 
 
