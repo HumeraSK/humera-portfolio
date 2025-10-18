@@ -93,6 +93,27 @@ nav {
   color: #333;
 }
 
+/* Social links below "View My Work" button */
+.hero .social-links-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;          /* space between logos */
+  margin-top: 25px;   /* distance from button */
+}
+
+.hero .social-links-hero a img {
+  width: 50px;           /* uniform size */
+  height: 50px;
+  object-fit: contain;   /* preserve original aspect ratio */
+  transition: transform 0.3s;
+}
+
+.hero .social-links-hero a img:hover {
+  transform: scale(1.2); /* subtle hover effect */
+}
+
+
 /* About Section */
 .about {
   padding: 80px 5%;
@@ -200,6 +221,18 @@ footer {
   .skills-container {
     flex-wrap: wrap;
   }
+  /* Responsive for Hero Social Links - Tablets */
+@media (max-width: 768px) {
+  .hero .social-links-hero {
+    gap: 20px; /* moderate spacing */
+    margin-top: 20px;
+  }
+
+  .hero .social-links-hero a img {
+    width: 45px;  /* slightly smaller than desktop */
+    height: 45px;
+  }
+}
 }
 
 /* For mobile phones (width ≤ 480px) */
@@ -243,6 +276,7 @@ footer {
     padding: 8px 15px;
   }
 }
+
 
 /* Hamburger menu styles */
 .menu-icon {
@@ -315,6 +349,7 @@ footer {
   font-weight: 500;
   font-size: 0.9rem;
 }
+
 
 
 
