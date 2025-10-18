@@ -26,24 +26,6 @@ body {
   line-height: 1.6;
 }
 
-.top-social-links {
-  text-align: center;
-  background: #f0f0ff;
-  padding: 5px 0;
-  font-weight: 500;
-}
-
-.top-social-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #6c63ff;
-  transition: color 0.3s;
-}
-
-.top-social-links a:hover {
-  color: #ffcc70;
-}
-
 
 /* Navbar */
 header {
@@ -333,6 +315,7 @@ footer {
   font-weight: 500;
   font-size: 0.9rem;
 }
+
 
 
 
