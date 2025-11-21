@@ -49,12 +49,16 @@ Editor    | 	Visual Studio Code
 -------------------------------------
 🔹 Header Section
 <img src="screenshots/Header%20section.png" width="700"/>
+
 🔹 About & Skills
-<img src="screenshots/About-skills%20section.png" width="700"/>
+<img src="screenshots/About-Skills%20section.png" width="700"/>
+
 🔹 Projects Section
 <img src="screenshots/Projects%20section.png" width="700"/>
+
 🔹 Certificates Section
 <img src="screenshots/Certificates%20section.png" width="700"/>
+
 🔹 Contact Section
 <img src="screenshots/Contact%20section.png" width="700"/>
 
