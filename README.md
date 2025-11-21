@@ -47,31 +47,42 @@ Editor    | 	Visual Studio Code
 
 📸 Screenshots
 -------------------------------------
+
 🔹 Header Section
+
 <img src="screenshots/Header%20section.png" width="700"/>
 
+
 🔹 About & Skills
+
 <img src="screenshots/About-Skills%20section.png" width="700"/>
 
+
 🔹 Projects Section
+
 <img src="screenshots/Projects%20section.png" width="700"/>
 
+
 🔹 Certificates Section
+
 <img src="screenshots/Certificates%20section.png" width="700"/>
 
+
 🔹 Contact Section
+
 <img src="screenshots/Contact%20section.png" width="700"/>
 
 
 ⚙️ How to Run Locally
 ---------------------------
 
-git clone https://github.com/HumeraSK/humera-portfolio.git
-cd humera-portfolio
+- git clone https://github.com/HumeraSK/humera-portfolio.git
+- cd humera-portfolio
+- Then open index.html in your browser.
 
-Then open index.html in your browser.
 
 🔗 Live Demo
+--------------------------------
 👉 https://humerask.github.io/humera-portfolio/
 
 
